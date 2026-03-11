@@ -8,7 +8,7 @@ load_dotenv()
 
 class SecurityConfig:
     # التوكن الأساسي للبوت
-    BOT_TOKEN = os.getenv("8631971512:AAHyuDK3Sr9tn14CTBfzDVWbamxfAZdcs7c")
+    BOT_TOKEN = os.getenv("BOT_TOKEN", "8631971512:AAHyuDK3Sr9tn14CTBfzDVWbamxfAZdcs7c")
     
     # إعدادات الأمان المتقدمة
     ADMIN_IDS = list(map(int, os.getenv("ADMIN_IDS", "").split(",")))
@@ -74,7 +74,7 @@ class MonitoringConfig:
         "multiple_failed_logins": 20,
         "suspicious_ip": 25,
         "password_change": 5,
-        2fa_bypass_attempt": 30,
-        2fa_failure": 10,
-        2fa_success": -5  # نقاط سالبة تعني تقليل المخاطر
+        "2fa_bypass_attempt": 30,
+        "2fa_failure": 10,
+        "2fa_success": -5
     }
