@@ -1,0 +1,21 @@
+# Islamic Channel Guardian - Dependencies
+# ========================================
+# المتطلبات اللازمة لتشغيل بوت الحارس الإسلامي
+
+# Telegram Bot API
+python-telegram-bot>=20.0
+
+# قاعدة البيانات مدمجة في Python (sqlite3)
+# لا حاجة لتثبيت إضافي
+
+# المكتبات القياسية المستخدمة:
+# - asyncio (مدمج)
+# - logging (مدمج)
+# - sqlite3 (مدمج)
+# - datetime (مدمج)
+# - dataclasses (مدمج في Python 3.7+)
+# - enum (مدمج)
+# - pathlib (مدمج)
+# - hashlib (مدمج)
+# - re (مدمج)
+# - json (مدمج)
